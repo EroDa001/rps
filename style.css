@@ -1,0 +1,102 @@
+/* styles.css */
+/* universal selector - Applies to whole document */
+body{
+	padding: 10;
+	margin: 10;
+	box-sizing: border-box;
+	background: #0e131e;
+	color: #f3d5d5;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.title{
+    font-size: 46px;
+
+}
+.rock, .paper, .scissor{
+    padding: 0.8rem;
+    width: 100px;
+    border-radius: 10px;
+    background: rgb(20, 118, 210);
+    outline: none;
+    border-color: rgb(255, 255, 255);
+    border: 2px;
+    cursor: pointer;
+    color: white;
+}
+  
+
+.score{
+    text-transform: lowercase;
+    text-align: center;
+    font-weight: 100;
+    font-size: 16px;
+    margin-top: 2rem;
+    display: flex;
+    width: 50vw;
+    justify-content: space-evenly;
+    top: 70px;
+
+}
+.p-count,.c-count{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.move {
+    margin-top: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.result{
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+.reload{
+    display: none;
+    padding: 0.8rem;
+    width: 100px;
+    border-radius: 10px;
+    background: rgb(20, 118, 210);
+    outline: none;
+    border-color: rgb(255, 255, 255);
+    border: 2px;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+
+}
+.options{
+    display: flex;
+    width: 50vw;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+}
+
+@media screen and (max-width: 612px)
+{  
+    .title{
+        text-align: center;
+    }
+    .score{
+        position: absolute;
+        top: 200px;
+        width: 100vw;
+    }
+    .options{
+        width: 100vw;
+    }
+}
